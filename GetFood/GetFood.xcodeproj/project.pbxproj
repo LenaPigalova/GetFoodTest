@@ -9,25 +9,75 @@
 /* Begin PBXBuildFile section */
 		F343234129DAC62400FF0D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343234029DAC62400FF0D6B /* AppDelegate.swift */; };
 		F343234329DAC62400FF0D6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343234229DAC62400FF0D6B /* SceneDelegate.swift */; };
-		F343234529DAC62400FF0D6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343234429DAC62400FF0D6B /* ViewController.swift */; };
-		F343234829DAC62400FF0D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F343234629DAC62400FF0D6B /* Main.storyboard */; };
 		F343234A29DAC62700FF0D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F343234929DAC62700FF0D6B /* Assets.xcassets */; };
 		F343234D29DAC62700FF0D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F343234B29DAC62700FF0D6B /* LaunchScreen.storyboard */; };
 		F343235B29DAC85900FF0D6B /* MainScreenInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343235A29DAC85900FF0D6B /* MainScreenInstaller.swift */; };
 		F343235E29DAC8BE00FF0D6B /* ViewInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343235D29DAC8BE00FF0D6B /* ViewInstaller.swift */; };
+		F343236029DAEA7B00FF0D6B /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343235F29DAEA7B00FF0D6B /* MainScreenViewController.swift */; };
+		F343236229DAEC7B00FF0D6B /* MainScreanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343236129DAEC7B00FF0D6B /* MainScreanInteractor.swift */; };
+		F343236429DAEC9300FF0D6B /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343236329DAEC9300FF0D6B /* MainScreenPresenter.swift */; };
+		F343236629DAECA400FF0D6B /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343236529DAECA400FF0D6B /* MainScreenRouter.swift */; };
+		F343237129DB042800FF0D6B /* MenuViewIstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343237029DB042800FF0D6B /* MenuViewIstaller.swift */; };
+		F343237329DB043D00FF0D6B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343237229DB043D00FF0D6B /* MenuViewController.swift */; };
+		F343237529DB045400FF0D6B /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343237429DB045400FF0D6B /* MenuInteractor.swift */; };
+		F343237729DB046300FF0D6B /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343237629DB046300FF0D6B /* MenuPresenter.swift */; };
+		F343237929DB047100FF0D6B /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343237829DB047100FF0D6B /* MenuRouter.swift */; };
+		F343238229DB158400FF0D6B /* ContactsViewInastaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343238129DB158400FF0D6B /* ContactsViewInastaller.swift */; };
+		F343238429DB159B00FF0D6B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343238329DB159B00FF0D6B /* ContactsViewController.swift */; };
+		F343238629DB15AF00FF0D6B /* ContactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343238529DB15AF00FF0D6B /* ContactsInteractor.swift */; };
+		F343238829DB15C200FF0D6B /* ContactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343238729DB15C200FF0D6B /* ContactsPresenter.swift */; };
+		F343238A29DB15D400FF0D6B /* ContactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343238929DB15D400FF0D6B /* ContactsRouter.swift */; };
+		F343239829DB28E900FF0D6B /* ProfileViewInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343239729DB28E900FF0D6B /* ProfileViewInstaller.swift */; };
+		F343239A29DB28FD00FF0D6B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343239929DB28FD00FF0D6B /* ProfileViewController.swift */; };
+		F343239C29DB290E00FF0D6B /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343239B29DB290E00FF0D6B /* ProfileInteractor.swift */; };
+		F343239E29DB291D00FF0D6B /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343239D29DB291D00FF0D6B /* ProfilePresenter.swift */; };
+		F34323A029DB293100FF0D6B /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343239F29DB293100FF0D6B /* ProfileRouter.swift */; };
+		F34323A229DB295400FF0D6B /* CartViewInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A129DB295400FF0D6B /* CartViewInstaller.swift */; };
+		F34323A429DB296400FF0D6B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A329DB296400FF0D6B /* CartViewController.swift */; };
+		F34323A629DB297600FF0D6B /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A529DB297600FF0D6B /* CartInteractor.swift */; };
+		F34323A829DB298500FF0D6B /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A729DB298500FF0D6B /* CartPresenter.swift */; };
+		F34323AA29DB29AA00FF0D6B /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A929DB29AA00FF0D6B /* CartRouter.swift */; };
+		F3CBB57E29DB400800B89928 /* sf-ui-display-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CBB57B29DB400800B89928 /* sf-ui-display-regular.ttf */; };
+		F3CBB57F29DB400800B89928 /* sf-ui-display-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CBB57C29DB400800B89928 /* sf-ui-display-semibold.ttf */; };
+		F3CBB58029DB400800B89928 /* sf-ui-display-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CBB57D29DB400800B89928 /* sf-ui-display-medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F343233D29DAC62400FF0D6B /* GetFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F343234029DAC62400FF0D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F343234229DAC62400FF0D6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F343234429DAC62400FF0D6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F343234729DAC62400FF0D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F343234929DAC62700FF0D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F343234C29DAC62700FF0D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F343234E29DAC62700FF0D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F343235A29DAC85900FF0D6B /* MainScreenInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInstaller.swift; sourceTree = "<group>"; };
 		F343235D29DAC8BE00FF0D6B /* ViewInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInstaller.swift; sourceTree = "<group>"; };
+		F343235F29DAEA7B00FF0D6B /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		F343236129DAEC7B00FF0D6B /* MainScreanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreanInteractor.swift; sourceTree = "<group>"; };
+		F343236329DAEC9300FF0D6B /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		F343236529DAECA400FF0D6B /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		F343237029DB042800FF0D6B /* MenuViewIstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewIstaller.swift; sourceTree = "<group>"; };
+		F343237229DB043D00FF0D6B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F343237429DB045400FF0D6B /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		F343237629DB046300FF0D6B /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		F343237829DB047100FF0D6B /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		F343238129DB158400FF0D6B /* ContactsViewInastaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewInastaller.swift; sourceTree = "<group>"; };
+		F343238329DB159B00FF0D6B /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		F343238529DB15AF00FF0D6B /* ContactsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsInteractor.swift; sourceTree = "<group>"; };
+		F343238729DB15C200FF0D6B /* ContactsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPresenter.swift; sourceTree = "<group>"; };
+		F343238929DB15D400FF0D6B /* ContactsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRouter.swift; sourceTree = "<group>"; };
+		F343239729DB28E900FF0D6B /* ProfileViewInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewInstaller.swift; sourceTree = "<group>"; };
+		F343239929DB28FD00FF0D6B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F343239B29DB290E00FF0D6B /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		F343239D29DB291D00FF0D6B /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		F343239F29DB293100FF0D6B /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		F34323A129DB295400FF0D6B /* CartViewInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewInstaller.swift; sourceTree = "<group>"; };
+		F34323A329DB296400FF0D6B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		F34323A529DB297600FF0D6B /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
+		F34323A729DB298500FF0D6B /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
+		F34323A929DB29AA00FF0D6B /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		F3CBB57B29DB400800B89928 /* sf-ui-display-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-regular.ttf"; path = "SF UI Display/sf-ui-display-regular.ttf"; sourceTree = SOURCE_ROOT; };
+		F3CBB57C29DB400800B89928 /* sf-ui-display-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-semibold.ttf"; path = "SF UI Display/sf-ui-display-semibold.ttf"; sourceTree = SOURCE_ROOT; };
+		F3CBB57D29DB400800B89928 /* sf-ui-display-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-medium.ttf"; path = "SF UI Display/sf-ui-display-medium.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +110,15 @@
 		F343233F29DAC62400FF0D6B /* GetFood */ = {
 			isa = PBXGroup;
 			children = (
+				F3CBB57429DB39B800B89928 /* Fonts */,
 				F343235C29DAC89C00FF0D6B /* Base */,
 				F343235429DAC68800FF0D6B /* MainScreen */,
-				F343234029DAC62400FF0D6B /* AppDelegate.swift */,
-				F343234229DAC62400FF0D6B /* SceneDelegate.swift */,
-				F343234429DAC62400FF0D6B /* ViewController.swift */,
-				F343234629DAC62400FF0D6B /* Main.storyboard */,
-				F343234929DAC62700FF0D6B /* Assets.xcassets */,
-				F343234B29DAC62700FF0D6B /* LaunchScreen.storyboard */,
+				F343236729DB02FD00FF0D6B /* MenuViewController */,
+				F343237A29DB150400FF0D6B /* ContactsViewController */,
+				F343238C29DB284500FF0D6B /* ProfileViewController */,
+				F343238B29DB281100FF0D6B /* CartViewController */,
+				F343236929DB035B00FF0D6B /* Resourses */,
+				F343236829DB033500FF0D6B /* SystemFiles */,
 				F343234E29DAC62700FF0D6B /* Info.plist */,
 			);
 			path = GetFood;
@@ -89,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F343235A29DAC85900FF0D6B /* MainScreenInstaller.swift */,
+				F343235F29DAEA7B00FF0D6B /* MainScreenViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +148,7 @@
 		F343235629DAC6AE00FF0D6B /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				F343236529DAECA400FF0D6B /* MainScreenRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -110,6 +163,7 @@
 		F343235829DAC6E000FF0D6B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F343236329DAEC9300FF0D6B /* MainScreenPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -117,6 +171,7 @@
 		F343235929DAC6F200FF0D6B /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				F343236129DAEC7B00FF0D6B /* MainScreanInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -127,6 +182,242 @@
 				F343235D29DAC8BE00FF0D6B /* ViewInstaller.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		F343236729DB02FD00FF0D6B /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F343236A29DB039800FF0D6B /* View */,
+				F343236E29DB03EF00FF0D6B /* Interactor */,
+				F343236D29DB03E000FF0D6B /* Presenter */,
+				F343236C29DB03D400FF0D6B /* Entity */,
+				F343236B29DB03C700FF0D6B /* Router */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		F343236829DB033500FF0D6B /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F343234029DAC62400FF0D6B /* AppDelegate.swift */,
+				F343234229DAC62400FF0D6B /* SceneDelegate.swift */,
+				F343234B29DAC62700FF0D6B /* LaunchScreen.storyboard */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		F343236929DB035B00FF0D6B /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				F343234929DAC62700FF0D6B /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		F343236A29DB039800FF0D6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F343237029DB042800FF0D6B /* MenuViewIstaller.swift */,
+				F343237229DB043D00FF0D6B /* MenuViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F343236B29DB03C700FF0D6B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F343237829DB047100FF0D6B /* MenuRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F343236C29DB03D400FF0D6B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F343236D29DB03E000FF0D6B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F343237629DB046300FF0D6B /* MenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F343236E29DB03EF00FF0D6B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F343237429DB045400FF0D6B /* MenuInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F343237A29DB150400FF0D6B /* ContactsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F343237B29DB152B00FF0D6B /* View */,
+				F343237F29DB155300FF0D6B /* Interactor */,
+				F343237E29DB154A00FF0D6B /* Presenter */,
+				F343237D29DB153F00FF0D6B /* Entity */,
+				F343237C29DB153700FF0D6B /* Router */,
+			);
+			path = ContactsViewController;
+			sourceTree = "<group>";
+		};
+		F343237B29DB152B00FF0D6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F343238129DB158400FF0D6B /* ContactsViewInastaller.swift */,
+				F343238329DB159B00FF0D6B /* ContactsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F343237C29DB153700FF0D6B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F343238929DB15D400FF0D6B /* ContactsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F343237D29DB153F00FF0D6B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F343237E29DB154A00FF0D6B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F343238729DB15C200FF0D6B /* ContactsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F343237F29DB155300FF0D6B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F343238529DB15AF00FF0D6B /* ContactsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F343238B29DB281100FF0D6B /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F343239629DB28D200FF0D6B /* View */,
+				F343239529DB28C800FF0D6B /* Interactor */,
+				F343239429DB28BE00FF0D6B /* Presenter */,
+				F343239329DB28B500FF0D6B /* Entity */,
+				F343239229DB28AA00FF0D6B /* Router */,
+			);
+			path = CartViewController;
+			sourceTree = "<group>";
+		};
+		F343238C29DB284500FF0D6B /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F343238D29DB286C00FF0D6B /* View */,
+				F343239129DB289C00FF0D6B /* Interactor */,
+				F343239029DB288A00FF0D6B /* Presenter */,
+				F343238F29DB287F00FF0D6B /* Entity */,
+				F343238E29DB287700FF0D6B /* Router */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		F343238D29DB286C00FF0D6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F343239729DB28E900FF0D6B /* ProfileViewInstaller.swift */,
+				F343239929DB28FD00FF0D6B /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F343238E29DB287700FF0D6B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F343239F29DB293100FF0D6B /* ProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F343238F29DB287F00FF0D6B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F343239029DB288A00FF0D6B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F343239D29DB291D00FF0D6B /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F343239129DB289C00FF0D6B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F343239B29DB290E00FF0D6B /* ProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F343239229DB28AA00FF0D6B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F34323A929DB29AA00FF0D6B /* CartRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F343239329DB28B500FF0D6B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F343239429DB28BE00FF0D6B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F34323A729DB298500FF0D6B /* CartPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F343239529DB28C800FF0D6B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F34323A529DB297600FF0D6B /* CartInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F343239629DB28D200FF0D6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F34323A129DB295400FF0D6B /* CartViewInstaller.swift */,
+				F34323A329DB296400FF0D6B /* CartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CBB57429DB39B800B89928 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBB57D29DB400800B89928 /* sf-ui-display-medium.ttf */,
+				F3CBB57B29DB400800B89928 /* sf-ui-display-regular.ttf */,
+				F3CBB57C29DB400800B89928 /* sf-ui-display-semibold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +479,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F343234D29DAC62700FF0D6B /* LaunchScreen.storyboard in Resources */,
+				F3CBB57F29DB400800B89928 /* sf-ui-display-semibold.ttf in Resources */,
 				F343234A29DAC62700FF0D6B /* Assets.xcassets in Resources */,
-				F343234829DAC62400FF0D6B /* Main.storyboard in Resources */,
+				F3CBB57E29DB400800B89928 /* sf-ui-display-regular.ttf in Resources */,
+				F3CBB58029DB400800B89928 /* sf-ui-display-medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,25 +493,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F343234529DAC62400FF0D6B /* ViewController.swift in Sources */,
+				F343239E29DB291D00FF0D6B /* ProfilePresenter.swift in Sources */,
+				F343236629DAECA400FF0D6B /* MainScreenRouter.swift in Sources */,
+				F343237329DB043D00FF0D6B /* MenuViewController.swift in Sources */,
+				F343239A29DB28FD00FF0D6B /* ProfileViewController.swift in Sources */,
+				F343236429DAEC9300FF0D6B /* MainScreenPresenter.swift in Sources */,
 				F343235E29DAC8BE00FF0D6B /* ViewInstaller.swift in Sources */,
+				F343238229DB158400FF0D6B /* ContactsViewInastaller.swift in Sources */,
+				F34323A429DB296400FF0D6B /* CartViewController.swift in Sources */,
+				F34323A829DB298500FF0D6B /* CartPresenter.swift in Sources */,
+				F343237129DB042800FF0D6B /* MenuViewIstaller.swift in Sources */,
+				F34323A029DB293100FF0D6B /* ProfileRouter.swift in Sources */,
+				F343237929DB047100FF0D6B /* MenuRouter.swift in Sources */,
+				F343239829DB28E900FF0D6B /* ProfileViewInstaller.swift in Sources */,
+				F343238829DB15C200FF0D6B /* ContactsPresenter.swift in Sources */,
 				F343234129DAC62400FF0D6B /* AppDelegate.swift in Sources */,
+				F34323A229DB295400FF0D6B /* CartViewInstaller.swift in Sources */,
+				F34323A629DB297600FF0D6B /* CartInteractor.swift in Sources */,
 				F343234329DAC62400FF0D6B /* SceneDelegate.swift in Sources */,
+				F34323AA29DB29AA00FF0D6B /* CartRouter.swift in Sources */,
 				F343235B29DAC85900FF0D6B /* MainScreenInstaller.swift in Sources */,
+				F343239C29DB290E00FF0D6B /* ProfileInteractor.swift in Sources */,
+				F343238A29DB15D400FF0D6B /* ContactsRouter.swift in Sources */,
+				F343236029DAEA7B00FF0D6B /* MainScreenViewController.swift in Sources */,
+				F343237529DB045400FF0D6B /* MenuInteractor.swift in Sources */,
+				F343236229DAEC7B00FF0D6B /* MainScreanInteractor.swift in Sources */,
+				F343238629DB15AF00FF0D6B /* ContactsInteractor.swift in Sources */,
+				F343237729DB046300FF0D6B /* MenuPresenter.swift in Sources */,
+				F343238429DB159B00FF0D6B /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F343234629DAC62400FF0D6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F343234729DAC62400FF0D6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F343234B29DAC62700FF0D6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,7 +664,6 @@
 				INFOPLIST_FILE = GetFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -385,7 +692,6 @@
 				INFOPLIST_FILE = GetFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

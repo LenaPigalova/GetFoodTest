@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 protocol MainScreenInstaller: ViewInstaller {
-    var tabBar : UITabBarController! {get set}
 }
 
 extension MainScreenInstaller {
@@ -20,14 +19,13 @@ extension MainScreenInstaller {
     }
     
     func initSubviews() {
-        tabBar = UITabBarController()
+        
     }
     
     func embedSubviews() {
-        <#code#>
     }
     
     func addSubviewsConstraints() {
-        <#code#>
+        
     }
 }
