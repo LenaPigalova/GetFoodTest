@@ -24,7 +24,9 @@ class MainScreenViewController: UITabBarController, MainScreenViewProtocol {
         
         tabBar.backgroundColor = .white
         tabBar.unselectedItemTintColor = UIColor(named: "barButtonUnselected")
-        
+        let color = CGColor(red: 0.958, green: 0.958, blue: 0.958, alpha: 1)
+        tabBar.layer.borderWidth = 1
+        tabBar.layer.borderColor = color
         tabBar.tintColor = UIColor(named: "barButtonSelected")
         self.modalPresentationStyle = .fullScreen
         presenter?.viewDidLoad()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F326C3BA29DC410200F5EC30 /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F326C3B929DC410100F5EC30 /* sf-ui-display-bold.ttf */; };
+		F326C3BC29DC4BBC00F5EC30 /* MenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326C3BB29DC4BBC00F5EC30 /* MenuEntity.swift */; };
 		F343234129DAC62400FF0D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343234029DAC62400FF0D6B /* AppDelegate.swift */; };
 		F343234329DAC62400FF0D6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343234229DAC62400FF0D6B /* SceneDelegate.swift */; };
 		F343234A29DAC62700FF0D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F343234929DAC62700FF0D6B /* Assets.xcassets */; };
@@ -37,12 +39,17 @@
 		F34323A629DB297600FF0D6B /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A529DB297600FF0D6B /* CartInteractor.swift */; };
 		F34323A829DB298500FF0D6B /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A729DB298500FF0D6B /* CartPresenter.swift */; };
 		F34323AA29DB29AA00FF0D6B /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A929DB29AA00FF0D6B /* CartRouter.swift */; };
+		F3AC5FEA29DD5B1B005912D6 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AC5FE829DD5B1B005912D6 /* MenuTableViewCell.swift */; };
+		F3AC5FEB29DD5B1B005912D6 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3AC5FE929DD5B1B005912D6 /* MenuTableViewCell.xib */; };
+		F3AC5FEF29DD8A44005912D6 /* ApiRouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AC5FEE29DD8A44005912D6 /* ApiRouterEnum.swift */; };
 		F3CBB57E29DB400800B89928 /* sf-ui-display-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CBB57B29DB400800B89928 /* sf-ui-display-regular.ttf */; };
 		F3CBB57F29DB400800B89928 /* sf-ui-display-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CBB57C29DB400800B89928 /* sf-ui-display-semibold.ttf */; };
 		F3CBB58029DB400800B89928 /* sf-ui-display-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CBB57D29DB400800B89928 /* sf-ui-display-medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F326C3B929DC410100F5EC30 /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
+		F326C3BB29DC4BBC00F5EC30 /* MenuEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEntity.swift; sourceTree = "<group>"; };
 		F343233D29DAC62400FF0D6B /* GetFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F343234029DAC62400FF0D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F343234229DAC62400FF0D6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +82,9 @@
 		F34323A529DB297600FF0D6B /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
 		F34323A729DB298500FF0D6B /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		F34323A929DB29AA00FF0D6B /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		F3AC5FE829DD5B1B005912D6 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		F3AC5FE929DD5B1B005912D6 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		F3AC5FEE29DD8A44005912D6 /* ApiRouterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouterEnum.swift; sourceTree = "<group>"; };
 		F3CBB57B29DB400800B89928 /* sf-ui-display-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-regular.ttf"; path = "SF UI Display/sf-ui-display-regular.ttf"; sourceTree = SOURCE_ROOT; };
 		F3CBB57C29DB400800B89928 /* sf-ui-display-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-semibold.ttf"; path = "SF UI Display/sf-ui-display-semibold.ttf"; sourceTree = SOURCE_ROOT; };
 		F3CBB57D29DB400800B89928 /* sf-ui-display-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-ui-display-medium.ttf"; path = "SF UI Display/sf-ui-display-medium.ttf"; sourceTree = SOURCE_ROOT; };
@@ -91,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F326C3BD29DC4F3000F5EC30 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F326C3BE29DC4F4600F5EC30 /* MenuCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F326C3BE29DC4F4600F5EC30 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				F3AC5FE829DD5B1B005912D6 /* MenuTableViewCell.swift */,
+				F3AC5FE929DD5B1B005912D6 /* MenuTableViewCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
 		F343233429DAC62400FF0D6B = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +137,8 @@
 		F343233F29DAC62400FF0D6B /* GetFood */ = {
 			isa = PBXGroup;
 			children = (
+				F3AC5FEC29DD89D4005912D6 /* Servises */,
+				F326C3BD29DC4F3000F5EC30 /* Cells */,
 				F3CBB57429DB39B800B89928 /* Fonts */,
 				F343235C29DAC89C00FF0D6B /* Base */,
 				F343235429DAC68800FF0D6B /* MainScreen */,
@@ -234,6 +263,7 @@
 		F343236C29DB03D400FF0D6B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				F326C3BB29DC4BBC00F5EC30 /* MenuEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -410,9 +440,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F3AC5FEC29DD89D4005912D6 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				F3AC5FED29DD89E4005912D6 /* Network */,
+			);
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		F3AC5FED29DD89E4005912D6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3AC5FEE29DD8A44005912D6 /* ApiRouterEnum.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F3CBB57429DB39B800B89928 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F326C3B929DC410100F5EC30 /* sf-ui-display-bold.ttf */,
 				F3CBB57D29DB400800B89928 /* sf-ui-display-medium.ttf */,
 				F3CBB57B29DB400800B89928 /* sf-ui-display-regular.ttf */,
 				F3CBB57C29DB400800B89928 /* sf-ui-display-semibold.ttf */,
@@ -481,7 +528,9 @@
 				F343234D29DAC62700FF0D6B /* LaunchScreen.storyboard in Resources */,
 				F3CBB57F29DB400800B89928 /* sf-ui-display-semibold.ttf in Resources */,
 				F343234A29DAC62700FF0D6B /* Assets.xcassets in Resources */,
+				F326C3BA29DC410200F5EC30 /* sf-ui-display-bold.ttf in Resources */,
 				F3CBB57E29DB400800B89928 /* sf-ui-display-regular.ttf in Resources */,
+				F3AC5FEB29DD5B1B005912D6 /* MenuTableViewCell.xib in Resources */,
 				F3CBB58029DB400800B89928 /* sf-ui-display-medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,10 +561,13 @@
 				F34323A629DB297600FF0D6B /* CartInteractor.swift in Sources */,
 				F343234329DAC62400FF0D6B /* SceneDelegate.swift in Sources */,
 				F34323AA29DB29AA00FF0D6B /* CartRouter.swift in Sources */,
+				F3AC5FEA29DD5B1B005912D6 /* MenuTableViewCell.swift in Sources */,
+				F326C3BC29DC4BBC00F5EC30 /* MenuEntity.swift in Sources */,
 				F343235B29DAC85900FF0D6B /* MainScreenInstaller.swift in Sources */,
 				F343239C29DB290E00FF0D6B /* ProfileInteractor.swift in Sources */,
 				F343238A29DB15D400FF0D6B /* ContactsRouter.swift in Sources */,
 				F343236029DAEA7B00FF0D6B /* MainScreenViewController.swift in Sources */,
+				F3AC5FEF29DD8A44005912D6 /* ApiRouterEnum.swift in Sources */,
 				F343237529DB045400FF0D6B /* MenuInteractor.swift in Sources */,
 				F343236229DAEC7B00FF0D6B /* MainScreanInteractor.swift in Sources */,
 				F343238629DB15AF00FF0D6B /* ContactsInteractor.swift in Sources */,
