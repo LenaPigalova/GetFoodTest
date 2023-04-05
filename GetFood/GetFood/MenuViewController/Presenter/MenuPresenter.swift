@@ -22,6 +22,8 @@ protocol MenuPresenterProtocol {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    
+    func reloadData(data: [Int: [Goods]])
 }
 
 class MenuPresenter: MenuPresenterProtocol {
@@ -33,8 +35,10 @@ class MenuPresenter: MenuPresenterProtocol {
     var data: [Int : [Goods]] = [0 : []]
     
     func viewDidLoad() {
+        interactor?.autorization()
         view?.setupSubviews()
         view?.setupTargets()
+        
         guard let data1 = interactor?.fetchGoods() else {
             return
         }
@@ -67,6 +71,11 @@ extension MenuPresenter {
         cell.descriptionLabel.text = goods.description
         cell.priceLabel.text = goods.price
         return cell
+    }
+    
+    func reloadData(data: [Int: [Goods]]) {
+        self.data = data
+        view?.tableView.reloadData()
     }
 
 }

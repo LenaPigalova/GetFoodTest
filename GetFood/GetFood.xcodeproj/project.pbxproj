@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9FADBC492D5A77930EE9DB /* Pods_GetFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6BADF79A9DEC9F8197E62C /* Pods_GetFood.framework */; };
 		F326C3BA29DC410200F5EC30 /* sf-ui-display-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F326C3B929DC410100F5EC30 /* sf-ui-display-bold.ttf */; };
 		F326C3BC29DC4BBC00F5EC30 /* MenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326C3BB29DC4BBC00F5EC30 /* MenuEntity.swift */; };
 		F343234129DAC62400FF0D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343234029DAC62400FF0D6B /* AppDelegate.swift */; };
@@ -39,6 +40,10 @@
 		F34323A629DB297600FF0D6B /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A529DB297600FF0D6B /* CartInteractor.swift */; };
 		F34323A829DB298500FF0D6B /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A729DB298500FF0D6B /* CartPresenter.swift */; };
 		F34323AA29DB29AA00FF0D6B /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34323A929DB29AA00FF0D6B /* CartRouter.swift */; };
+		F3A0779029DD946B002EA35B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0778F29DD946B002EA35B /* NetworkHelper.swift */; };
+		F3A0779229DD98D4002EA35B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0779129DD98D4002EA35B /* ApiClient.swift */; };
+		F3A0779529DD9AF1002EA35B /* AuthorizationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0779429DD9AF1002EA35B /* AuthorizationResponse.swift */; };
+		F3A0779729DDA515002EA35B /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0779629DDA514002EA35B /* Defaults.swift */; };
 		F3AC5FEA29DD5B1B005912D6 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AC5FE829DD5B1B005912D6 /* MenuTableViewCell.swift */; };
 		F3AC5FEB29DD5B1B005912D6 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3AC5FE929DD5B1B005912D6 /* MenuTableViewCell.xib */; };
 		F3AC5FEF29DD8A44005912D6 /* ApiRouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AC5FEE29DD8A44005912D6 /* ApiRouterEnum.swift */; };
@@ -48,6 +53,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06B9165ED455062FFBE83321 /* Pods-GetFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetFood.release.xcconfig"; path = "Target Support Files/Pods-GetFood/Pods-GetFood.release.xcconfig"; sourceTree = "<group>"; };
+		158318D5B011F3E87E9014F0 /* Pods-GetFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetFood.debug.xcconfig"; path = "Target Support Files/Pods-GetFood/Pods-GetFood.debug.xcconfig"; sourceTree = "<group>"; };
+		2B6BADF79A9DEC9F8197E62C /* Pods_GetFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326C3B929DC410100F5EC30 /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
 		F326C3BB29DC4BBC00F5EC30 /* MenuEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEntity.swift; sourceTree = "<group>"; };
 		F343233D29DAC62400FF0D6B /* GetFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +90,10 @@
 		F34323A529DB297600FF0D6B /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
 		F34323A729DB298500FF0D6B /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		F34323A929DB29AA00FF0D6B /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		F3A0778F29DD946B002EA35B /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		F3A0779129DD98D4002EA35B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F3A0779429DD9AF1002EA35B /* AuthorizationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationResponse.swift; sourceTree = "<group>"; };
+		F3A0779629DDA514002EA35B /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		F3AC5FE829DD5B1B005912D6 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		F3AC5FE929DD5B1B005912D6 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		F3AC5FEE29DD8A44005912D6 /* ApiRouterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouterEnum.swift; sourceTree = "<group>"; };
@@ -95,12 +107,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9FADBC492D5A77930EE9DB /* Pods_GetFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E40598056A5903E17CA3C20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				158318D5B011F3E87E9014F0 /* Pods-GetFood.debug.xcconfig */,
+				06B9165ED455062FFBE83321 /* Pods-GetFood.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0F49297447E633B2345BEE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6BADF79A9DEC9F8197E62C /* Pods_GetFood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F326C3BD29DC4F3000F5EC30 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +153,8 @@
 			children = (
 				F343233F29DAC62400FF0D6B /* GetFood */,
 				F343233E29DAC62400FF0D6B /* Products */,
+				6E40598056A5903E17CA3C20 /* Pods */,
+				D0F49297447E633B2345BEE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -440,10 +472,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F3A0779329DD9AD0002EA35B /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3A0779429DD9AF1002EA35B /* AuthorizationResponse.swift */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
 		F3AC5FEC29DD89D4005912D6 /* Servises */ = {
 			isa = PBXGroup;
 			children = (
 				F3AC5FED29DD89E4005912D6 /* Network */,
+				F3A0779629DDA514002EA35B /* Defaults.swift */,
 			);
 			path = Servises;
 			sourceTree = "<group>";
@@ -451,7 +492,10 @@
 		F3AC5FED29DD89E4005912D6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F3A0779329DD9AD0002EA35B /* NetworkModel */,
 				F3AC5FEE29DD8A44005912D6 /* ApiRouterEnum.swift */,
+				F3A0778F29DD946B002EA35B /* NetworkHelper.swift */,
+				F3A0779129DD98D4002EA35B /* ApiClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -474,9 +518,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F343235129DAC62700FF0D6B /* Build configuration list for PBXNativeTarget "GetFood" */;
 			buildPhases = (
+				627FBD379AF25A3C126066E3 /* [CP] Check Pods Manifest.lock */,
 				F343233929DAC62400FF0D6B /* Sources */,
 				F343233A29DAC62400FF0D6B /* Frameworks */,
 				F343233B29DAC62400FF0D6B /* Resources */,
+				DFA4C4CC5C2A54464E95260C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -503,7 +549,7 @@
 				};
 			};
 			buildConfigurationList = F343233829DAC62400FF0D6B /* Build configuration list for PBXProject "GetFood" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -537,6 +583,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		627FBD379AF25A3C126066E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA4C4CC5C2A54464E95260C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetFood/Pods-GetFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetFood/Pods-GetFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetFood/Pods-GetFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F343233929DAC62400FF0D6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -553,6 +641,9 @@
 				F34323A829DB298500FF0D6B /* CartPresenter.swift in Sources */,
 				F343237129DB042800FF0D6B /* MenuViewIstaller.swift in Sources */,
 				F34323A029DB293100FF0D6B /* ProfileRouter.swift in Sources */,
+				F3A0779729DDA515002EA35B /* Defaults.swift in Sources */,
+				F3A0779229DD98D4002EA35B /* ApiClient.swift in Sources */,
+				F3A0779529DD9AF1002EA35B /* AuthorizationResponse.swift in Sources */,
 				F343237929DB047100FF0D6B /* MenuRouter.swift in Sources */,
 				F343239829DB28E900FF0D6B /* ProfileViewInstaller.swift in Sources */,
 				F343238829DB15C200FF0D6B /* ContactsPresenter.swift in Sources */,
@@ -566,6 +657,7 @@
 				F343235B29DAC85900FF0D6B /* MainScreenInstaller.swift in Sources */,
 				F343239C29DB290E00FF0D6B /* ProfileInteractor.swift in Sources */,
 				F343238A29DB15D400FF0D6B /* ContactsRouter.swift in Sources */,
+				F3A0779029DD946B002EA35B /* NetworkHelper.swift in Sources */,
 				F343236029DAEA7B00FF0D6B /* MainScreenViewController.swift in Sources */,
 				F3AC5FEF29DD8A44005912D6 /* ApiRouterEnum.swift in Sources */,
 				F343237529DB045400FF0D6B /* MenuInteractor.swift in Sources */,
@@ -706,6 +798,7 @@
 		};
 		F343235229DAC62700FF0D6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158318D5B011F3E87E9014F0 /* Pods-GetFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -734,6 +827,7 @@
 		};
 		F343235329DAC62700FF0D6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B9165ED455062FFBE83321 /* Pods-GetFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

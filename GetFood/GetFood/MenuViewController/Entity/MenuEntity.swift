@@ -7,11 +7,15 @@
 
 import Foundation
 
-struct Goods {
+struct Goods: Decodable {
     let id: Int
     let name: String
     let description: String
-    let categoriId: Int
+    let id_category: Int
     let price: String
     let link: String
+}
+
+struct GoodsData: Decodable {
+    let data : [Goods]
 }
