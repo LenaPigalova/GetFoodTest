@@ -24,6 +24,8 @@ protocol MenuPresenterProtocol {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
     func reloadData(data: [Int: [Goods]])
+    
+    func updateCell(indexPath: IndexPath, image: UIImage)
 }
 
 class MenuPresenter: MenuPresenterProtocol {
@@ -59,11 +61,21 @@ extension MenuPresenter {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as? MenuTableViewCell else {
             return UITableViewCell()
         }
         let goodsById = data[indexPath.section]!
         let goods = goodsById[indexPath.row]
+        
+        let dishName = goods.link
+
+        cell.goodsImageView.image = UIImage(named: "CellImage")
+        if let dishImage = interactor?.ImageCache?[dishName] {
+            cell.goodsImageView.image = dishImage
+        } else {
+            interactor?.getImage(by: goods.link, indexPath: indexPath)
+        }
         cell.priceLabel.layer.cornerRadius = 6
         cell.priceLabel.layer.borderWidth = 1
         cell.priceLabel.layer.borderColor = UIColor(named: "barButtonSelected")!.cgColor
@@ -76,6 +88,17 @@ extension MenuPresenter {
     func reloadData(data: [Int: [Goods]]) {
         self.data = data
         view?.tableView.reloadData()
+    }
+    
+    func updateCell(indexPath: IndexPath , image: UIImage) {
+        DispatchQueue.main.async(execute: {
+            guard let cellToUpdate = self.view?.tableView.cellForRow(at: indexPath) as? MenuTableViewCell else {
+                return
+            }
+            //let img = UIImage(named: "ad1")
+            cellToUpdate.goodsImageView.image = image
+            //self.view?.tableView.reloadRows(at: [indexPath], with: .none)
+        })
     }
 
 }

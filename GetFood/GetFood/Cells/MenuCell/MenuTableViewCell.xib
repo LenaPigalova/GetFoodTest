@@ -26,21 +26,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="359" height="180"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellImage" translatesAutoresizingMaskIntoConstraints="NO" id="lw7-bK-ddv">
-                        <rect key="frame" x="16" y="24" width="132" height="132"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="132" id="cnd-kC-qeh"/>
-                            <constraint firstAttribute="width" constant="132" id="vQZ-OG-WgA"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3F-AB-SM5">
-                        <rect key="frame" x="172" y="32" width="163" height="21"/>
+                        <rect key="frame" x="180" y="32" width="155" height="21"/>
                         <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                         <color key="textColor" name="goodsName"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u45-nJ-Meb">
-                        <rect key="frame" x="172" y="60.999999999999993" width="163" height="15.666666666666664"/>
+                        <rect key="frame" x="180" y="60.999999999999993" width="155" height="15.666666666666664"/>
                         <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -55,17 +48,24 @@
                         <color key="textColor" name="barButtonSelected"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-mW-wuA">
+                        <rect key="frame" x="16" y="24" width="132" height="132"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="132" id="Wlr-fu-HCa"/>
+                            <constraint firstAttribute="width" constant="132" id="wnj-c0-RUk"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="lw7-bK-ddv" secondAttribute="bottom" constant="24" id="1HJ-Zq-LcN"/>
                     <constraint firstAttribute="trailing" secondItem="u45-nJ-Meb" secondAttribute="trailing" constant="24" id="78Q-1I-eHe"/>
-                    <constraint firstItem="lw7-bK-ddv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="BqM-XH-81m"/>
-                    <constraint firstItem="lw7-bK-ddv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="BrT-ZE-4Rh"/>
+                    <constraint firstItem="u45-nJ-Meb" firstAttribute="leading" secondItem="zfG-mW-wuA" secondAttribute="trailing" constant="32" id="G89-6A-cpj"/>
                     <constraint firstItem="37a-qv-R0t" firstAttribute="top" secondItem="u45-nJ-Meb" secondAttribute="bottom" constant="16" id="IqJ-rh-8LV"/>
-                    <constraint firstItem="u45-nJ-Meb" firstAttribute="leading" secondItem="lw7-bK-ddv" secondAttribute="trailing" constant="24" id="P2z-o3-azw"/>
-                    <constraint firstItem="p3F-AB-SM5" firstAttribute="leading" secondItem="lw7-bK-ddv" secondAttribute="trailing" constant="24" id="QIr-3f-BpF"/>
                     <constraint firstItem="p3F-AB-SM5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="Tt2-CV-pdd"/>
+                    <constraint firstAttribute="bottom" secondItem="zfG-mW-wuA" secondAttribute="bottom" constant="24" id="ce4-N5-nI2"/>
                     <constraint firstItem="37a-qv-R0t" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-24" id="cyJ-yw-w9G"/>
+                    <constraint firstItem="p3F-AB-SM5" firstAttribute="leading" secondItem="zfG-mW-wuA" secondAttribute="trailing" constant="32" id="fJx-kj-gaD"/>
+                    <constraint firstItem="zfG-mW-wuA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="gmn-kl-jT6"/>
+                    <constraint firstItem="zfG-mW-wuA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="lol-Tc-DUl"/>
                     <constraint firstItem="u45-nJ-Meb" firstAttribute="top" secondItem="p3F-AB-SM5" secondAttribute="bottom" constant="8" id="uhc-wX-MTV"/>
                     <constraint firstAttribute="trailing" secondItem="p3F-AB-SM5" secondAttribute="trailing" constant="24" id="zpy-Sf-Hsv"/>
                 </constraints>
@@ -73,6 +73,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="descriptionLabel" destination="u45-nJ-Meb" id="ItB-vi-iVq"/>
+                <outlet property="goodsImageView" destination="zfG-mW-wuA" id="67N-Gx-38D"/>
                 <outlet property="nameLabel" destination="p3F-AB-SM5" id="au8-Dv-b4i"/>
                 <outlet property="priceLabel" destination="37a-qv-R0t" id="u7d-wY-tJT"/>
             </connections>
@@ -80,7 +81,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="CellImage" width="132" height="132"/>
         <namedColor name="barButtonSelected">
             <color red="0.99215686274509807" green="0.22745098039215686" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

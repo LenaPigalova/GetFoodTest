@@ -12,19 +12,26 @@ protocol MenuInteractorProtocol {
     
     var presenter: MenuPresenterProtocol? { get set }
     
+    var ImageCache: [String:UIImage]? { get set }
+    
     func fetchGoods() -> [Int : [Goods]]
     
     func autorization()
+    
+    func getImage(by link: String, indexPath: IndexPath)
 }
 
 class MenuInteractor: MenuInteractorProtocol {
     
     var presenter: MenuPresenterProtocol?
     
+    var ImageCache: [String:UIImage]?
+    
     var token: String? = nil
     var data: [Int : [Goods]]?
     
     func fetchGoods() -> [Int : [Goods]] {
+        ImageCache = [:]
         if data == nil {
             data = [0 : [
                 Goods(
@@ -165,5 +172,21 @@ class MenuInteractor: MenuInteractorProtocol {
         data[previousCategoryId] = goodsByCategory
         print(data)
         return data
+    }
+    
+    func getImage(by link: String, indexPath: IndexPath) {
+        
+        AF.request(link, method: .get)
+                .validate()
+                .responseData(completionHandler: { (responseData) in
+                    guard let dt = responseData.data else {
+                        return
+                    }
+                    guard let image = UIImage(data: dt) else {
+                        return
+                    }
+                    self.ImageCache?[link] = image
+                    self.presenter?.updateCell(indexPath: indexPath, image: image)
+                })
     }
 }
